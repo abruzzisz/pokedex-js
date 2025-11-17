@@ -71,7 +71,7 @@ const allTypes = [
 
    async function searchPokemon() {
     if (loading) return;
-    let search = document.querySelector('input[types="search"]').value;
+    let search = document.querySelector('input[type="search"]').value;
     if (search != "")  {
         loading = true;
         const pokemon = await getPokemon("pokemon/" + search);

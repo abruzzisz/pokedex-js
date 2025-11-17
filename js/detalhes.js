@@ -40,11 +40,11 @@ async function drawPokemon(id) {
           sons.innerHTML = '<span class="fw-bold mb-0 me-2">Sons:</span>';
           if (pokemon.cries.latest != null)
             sons.innerHTML += `<i class="bi bi-play-circle fs-1 me-3
-        onclick="document.getElementByld('legacy').play()"></i><audio controls id='legacy' hidden>
+        onclick="document.getElementById('legacy').play()"></i><audio controls id='legacy' hidden>
         <source src="${pokemon.cries.legacy}" type="audio/ogg"></audio>`;
         if (pokemon.cries.legacy != null)
             sons.innerHTML += `<i class="bi bi-play-circle fs-1"
-        onclick="document.getElementByld('legacy').play()"><i/><audio controls id='legacy' hidden>
+        onclick="document.getElementById('legacy').play()"><i/><audio controls id='legacy' hidden>
         <source src="${pokemon.cries.legacy}" type="audio/ogg"></audio>`;
 
         const yValues = [];
